@@ -437,7 +437,7 @@
       color: rgba(255, 255, 255, 0.7);
     }
 
-    /* 英雄視覺：精品手沖器具純 CSS / SVG 藝術 */
+    /* 英雄視覺 */
     .hero-visual {
       position: relative;
       display: flex;
@@ -458,17 +458,15 @@
       text-align: center;
     }
 
-    .visual-art-box {
-      width: 200px;
-      height: 220px;
+    .hero-photo {
+      width: 400px;
+      height: 300px;
+      max-width: 100%;
       margin: 0 auto 24px;
-      position: relative;
-    }
-
-    .dripper-svg {
-      width: 100%;
-      height: 100%;
-      filter: drop-shadow(0 15px 25px rgba(0,0,0,0.45));
+      display: block;
+      object-fit: cover;
+      border-radius: var(--radius-sm);
+      box-shadow: 0 15px 25px rgba(0, 0, 0, 0.3);
     }
 
     .visual-floating-badge {
@@ -1565,41 +1563,7 @@
             <span>最佳水溫</span>
             <b>92.5°C</b>
           </div>
-          <div class="visual-art-box">
-            <!-- 濾杯與手沖壼 SVG 精品繪圖 -->
-            <svg class="dripper-svg" viewBox="0 0 200 240" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <!-- 濾杯上座 -->
-              <polygon points="30,30 170,30 135,110 65,110" fill="url(#dripperGrad)" stroke="#cba358" stroke-width="2.5"/>
-              <!-- 肋骨線條 -->
-              <line x1="60" y1="35" x2="80" y2="105" stroke="rgba(255,255,255,0.4)" stroke-width="1.5"/>
-              <line x1="100" y1="35" x2="100" y2="105" stroke="rgba(255,255,255,0.4)" stroke-width="1.5"/>
-              <line x1="140" y1="35" x2="120" y2="105" stroke="rgba(255,255,255,0.4)" stroke-width="1.5"/>
-              <!-- 底座承架 -->
-              <rect x="45" y="110" width="110" height="8" rx="4" fill="#cba358"/>
-              <!-- 下壺本體 -->
-              <path d="M70,122 L130,122 L155,205 C155,215 145,220 135,220 L65,220 C55,220 45,215 45,205 Z" fill="url(#carafeGrad)" stroke="rgba(255,255,255,0.6)" stroke-width="2"/>
-              <!-- 咖啡液體 -->
-              <path d="M54,175 L146,175 L152,204 C152,212 144,217 134,217 L66,217 C56,217 48,212 48,204 Z" fill="url(#coffeeGrad)"/>
-              <!-- 水滴 -->
-              <circle cx="100" cy="140" r="3" fill="#cba358"/>
-              <!-- 漸層定義 -->
-              <defs>
-                <linearGradient id="dripperGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-                  <stop offset="0%" stop-color="#2e6b49" stop-opacity="0.85"/>
-                  <stop offset="100%" stop-color="#0a1f14" stop-opacity="0.95"/>
-                </linearGradient>
-                <linearGradient id="carafeGrad" x1="0%" y1="0%" x2="100%" y2="0%">
-                  <stop offset="0%" stop-color="rgba(255,255,255,0.2)"/>
-                  <stop offset="50%" stop-color="rgba(255,255,255,0.05)"/>
-                  <stop offset="100%" stop-color="rgba(255,255,255,0.25)"/>
-                </linearGradient>
-                <linearGradient id="coffeeGrad" x1="0%" y1="0%" x2="0%" y2="100%">
-                  <stop offset="0%" stop-color="#7a4419"/>
-                  <stop offset="100%" stop-color="#4a220a"/>
-                </linearGradient>
-              </defs>
-            </svg>
-          </div>
+          <img class="hero-photo" src="images/hero.jpg" alt="窗邊手沖咖啡與遠方山景" width="400" height="300">
           <div class="visual-floating-badge badge-bottom-right">
             <span>黃金粉水比</span>
             <b>1 : 15.5</b>
